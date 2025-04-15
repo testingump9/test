@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 214 31% 9%;
+    --foreground: 220 20% 90%;
+    --card: 214 31% 9%;
+    --card-foreground: 220 20% 90%;
+    --popover: 214 31% 9%;
+    --popover-foreground: 220 20% 90%;
+    --primary: 197 83% 47%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 22% 49%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+    --accent: 180 100% 25%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 197 83% 47%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    --sidebar-background: 214 31% 9%;
+    --sidebar-foreground: 220 20% 90%;
+    --sidebar-primary: 197 83% 47%;
+    --sidebar-primary-foreground: 222.2 47.4% 11.2%;
+    --sidebar-accent: 180 100% 25%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217.2 32.6% 17.5%;
+    --sidebar-ring: 197 83% 47%;
+  }
+
+  .dark {
+    --background: 24 16% 12%;
+    --foreground: 240 10% 85%;
+    --card: 24 16% 12%;
+    --card-foreground: 240 10% 85%;
+    --popover: 24 16% 12%;
+    --popover-foreground: 240 10% 85%;
+    --primary: 174 74% 62%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 22% 49%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+    --accent: 180 100% 25%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 174 74% 62%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    --sidebar-background: 24 16% 12%;
+    --sidebar-foreground: 240 10% 85%;
+    --sidebar-primary: 174 74% 62%;
+    --sidebar-primary-foreground: 222.2 47.4% 11.2%;
+    --sidebar-accent: 180 100% 25%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217.2 32.6% 17.5%;
+    --sidebar-ring: 174 74% 62%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Gradient backgrounds */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #008080 0%, #4682B4 50%, #000080 100%);
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(135deg, #4682B4 0%, #000080 50%, #001F3F 100%);
+}
+
+/* Custom gradients for enhanced aesthetics */
+.bg-gradient-teal-blue {
+    background: linear-gradient(135deg, #008080 0%, #4682B4 100%);
+}
+
+.bg-gradient-navy-teal {
+    background: linear-gradient(135deg, #000080 0%, #008080 100%);
+}
+
+.bg-gradient-dark-navy {
+    background: linear-gradient(135deg, #191970 0%, #000080 100%);
+}
+
